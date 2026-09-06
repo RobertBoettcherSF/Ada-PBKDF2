@@ -171,6 +171,7 @@ begin
       begin
          declare
             Discard : Byte_Array := T_PBKDF1.Derive (S2B("k"), S2B("s"), 1, 5);
+            pragma Unreferenced (Discard);
          begin
             null;
          end;
@@ -181,6 +182,7 @@ begin
       begin
          declare
             Discard : Byte_Array := T_PBKDF1.Derive (S2B("k"), S2B("s"), 1, 10);
+            pragma Unreferenced (Discard);
          begin
             null;
          end;
@@ -191,6 +193,7 @@ begin
       begin
          declare
             Discard : Byte_Array := T_PBKDF1.Derive (S2B("k"), S2B("s"), 1, 100);
+            pragma Unreferenced (Discard);
          begin
             null;
          end;
